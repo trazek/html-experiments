@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      nav {
+        display: flex;
+        background-color: #6e072d;
+        color: white;
+        justify-content: space-between;
+      }
+
+      ul {
+        --list-item-font-size: 18px;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul > li {
+        list-style-type: none;
+        font-size: var(--list-item-font-size);
+        padding: 18px calc(1.5 * var(--list-item-font-size));
+        border-right: 2px solid white;
+      }
+
+      ul > li:last-child {
+        border-right: none;
+      }
+
+      ul > li:hover {
+        background-color: #b90e4d;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Product</li>
+        <li>Testimonials</li>
+        <li>Pricing</li>
+      </ul>
+
+      <ul>
+        <li>Team</li>
+        <li>Contact Us</li>
+      </ul>
+    </nav>
+  </body>
+</html>

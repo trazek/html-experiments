@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        --pig-skin-color: #ffc0cb;
+        --pig-border: 5px solid black;
+        --pig-eye-size: 50px;
+        background-color: grey;
+      }
+
+      .head {
+        background-color: var(--pig-skin-color);
+        border: var(--pig-border);
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        border-radius: 50%;
+      }
+
+      .head > div:first-child {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .head > div:first-child > .ear:first-child {
+        left: 10px;
+        position: relative;
+        top: -10px;
+      }
+
+      .head > div:first-child > .ear:last-child {
+        left: -10px;
+        position: relative;
+        top: -10px;
+      }
+
+      .ear {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--pig-skin-color);
+        border: var(--pig-border);
+        z-index: -1;
+      }
+
+      .eye {
+        width: var(--pig-eye-size);
+        height: var(--pig-eye-size);
+        background-color: white;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border: 2px solid black;
+      }
+
+      .eye > .pupil {
+        width: calc(var(--pig-eye-size) / 2);
+        height: calc(var(--pig-eye-size) / 2);
+        background-color: black;
+        border-radius: 50%;
+      }
+
+      .head > div:nth-child(2) {
+        display: flex;
+        justify-content: space-around;
+        margin-top: -20px;
+        margin-left: 14px;
+        margin-right: 14px;
+      }
+
+      .nose {
+        width: 100px;
+        height: 60px;
+        border-radius: 35%;
+        border: 2px solid black;
+        background-color: #f57187;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        margin-top: 12px;
+      }
+
+      .nose > .nostril {
+        width: calc(100px * 0.25);
+        height: calc(60px * 0.5);
+        border-radius: 50%;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div>
+        <div class="ear"></div>
+        <div class="ear"></div>
+      </div>
+
+      <div>
+        <div class="eye">
+          <div class="pupil"></div>
+        </div>
+        <div class="eye">
+          <div class="pupil"></div>
+        </div>
+      </div>
+
+      <div class="nose">
+        <div class="nostril"></div>
+        <div class="nostril"></div>
+      </div>
+    </div>
+  </body>
+</html>

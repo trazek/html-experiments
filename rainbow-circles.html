@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: grey;
+      }
+      div {
+        border-radius: 50%;
+      }
+      div#outer {
+        background-color: #ffa500;
+        border: 25px solid #ff0000;
+        width: 250px;
+        height: 250px;
+        text-align: center;
+      }
+      div#middle {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border: 25px solid #ffff00;
+        background-color: #008000;
+        position: relative;
+        top: 25px;
+      }
+      div#inner {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        border: 25px solid #0000ff;
+        background-color: #800080;
+        position: relative;
+        top: 25px;
+      }
+      div#crx-root-main {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="middle">
+        <div id="inner"></div>
+      </div>
+    </div>
+  </body>
+</html>
